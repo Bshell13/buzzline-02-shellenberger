@@ -60,6 +60,10 @@ def process_message(message: str) -> None:
         message (str): The message to process.
     """
     logger.info(f"Processing message: {message}")
+    
+    if 'Stock is falling' in message:
+        print(f"ALERT: The stock is not doing so hot!")
+        logger.warning(f"ALERT: The stock is not doing so hot!!!")
 
 
 #####################################
